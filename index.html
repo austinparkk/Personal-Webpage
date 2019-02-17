@@ -9,41 +9,37 @@
             body, html {
                 height: 100%;
                 margin: 0;
-                font: 400 15px/1.8 "Lato", sans-serif;
-                color: #fff;
+                font: 400 15px/1.8 "serif";
+                font-size: 25px;
+                /*color: rgb(30, 171, 206);*/
+                color: rgb(0, 175, 206)
             }
             .bgimg-1 {
+                background-image: url("IMG_0978.jpg");
+                height: 100%;
                 position: relative;
                 opacity: 1;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-
-            }
-            .bgimg-1 {
-                background-image: url("IMG_0977.jpeg");
-                height: 100%;
             }
             .caption {
                 position: absolute;
                 left: 0;
-                top: 50%;
+                top: 18%;
                 width: 100%;
                 text-align: center;
-            }
-            .caption span.border {
-                font: 400 15px/1.8 "serif";
+                font: 100 130px/0.8 'Great Vibes', Helvetica, sans-serif;
                 padding: 18px;
-                font-size: 50px;
-                /*letter-spacing: 10px;/
-                */
+                font-size: 70px;
+                color: rgb(255, 255, 255);
+                text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
             }
             .menu {
-                font: 400 15px/1.8 "serif";
-                font-size: 25px;
                 position: absolute;
-                top: 8px;
-                right: 16px;
+                bottom: 0px;
+                right: 23px;
+                color: rgb(255, 255, 255);
             }
             ul#horizontal-list {
 	            min-width: 500px;
@@ -53,6 +49,18 @@
                 padding: 15px;
 		        display: inline;
 	        }
+            .profile{
+                background-color: white;
+                height: 90%
+            }
+            .profile-title{
+                position: relative;
+                font-weight: 100;
+                font-size: 40px;
+                top: 5%;
+                text-align: center;
+            }
+
             
         </style>
     </head>
@@ -68,8 +76,12 @@
                 </ul>
             </div>
             <div class = "caption">
-                <span class = "border">J. Austin Park</span>
+                <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+                <span>J. Austin Park</span>
             </div>
+        </div>
+        <div class = "profile">
+            <div class = "profile-title">Profile</div>
         </div>
     </body>
 </html>
