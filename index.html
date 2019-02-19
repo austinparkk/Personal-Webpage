@@ -9,7 +9,7 @@
             body, html {
                 height: 100%;
                 margin: 0;
-                font: 400 15px/1.8 "serif";
+                font-family: "Didot", serif;
                 font-size: 25px;
                 /*color: rgb(30, 171, 206);*/
                 color: rgb(0, 175, 206)
@@ -49,6 +49,14 @@
                 padding: 15px;
 		        display: inline;
 	        }
+            .container {
+                position: relative;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, 0);
+                width: 60%;
+                height: 100%;
+            }
             .profile{
                 background-color: white;
                 height: 90%
@@ -60,6 +68,38 @@
                 top: 5%;
                 text-align: center;
             }
+            .about-me {
+                position: absolute;
+                top: 30%;
+                right: 0;
+                height: 50%;
+                width: 30%;
+            }
+            .name {
+                position: absolute;
+                top: 35%;
+                height: 50%;
+                width: 30%;
+                font-size: 15px;
+                font-style: normal;
+                color: black;
+            }
+            .sub-title{
+                position: relative;
+                text-align: center;
+                font-size: 25px;
+                
+            }
+            .description{
+                font-size: 15px;
+                font-style: normal;
+                color: black;
+            }
+            .hr { 
+                display: block;
+                border-style: inset;
+                border-width: .5px;
+                } 
 
             
         </style>
@@ -81,7 +121,21 @@
             </div>
         </div>
         <div class = "profile">
-            <div class = "profile-title">Profile</div>
+            <div class = "container">
+                <div class = "profile-title">Profile <hr></div>
+                <div class = "name">
+                    <p><b>Name:</b><br>Austin Park</p>
+                    <p><b>Age:</b><br>25</p>
+                    <p><b>Location:</b><br>Philadelphia, PA, USA</p>
+                </div>
+                <div class = "about-me">
+                    <div class = "sub-title">About Me</div>
+                    <p class = "description">An aspiring Full-Stack Developer seeking an opportunity 
+                        to be challenged, to grow, and to develop my skills. A team oriented person who loves working and collaborating with others.
+                        A highly motivated self-starter who strives to be the best version of me that I can be.</p>
+                </div>
+
+            </div>
         </div>
     </body>
 </html>
